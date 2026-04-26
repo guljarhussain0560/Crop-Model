@@ -138,13 +138,16 @@ crop_model, crop_encoder = load_crop_model()
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.markdown("""
-        <h1 style='text-align: center; color: #2d5a3d; font-size: 3.5em; margin-bottom: -10px;'>
+        <h1 style='text-align: center; color: #ffffff; font-size: 4em; margin-bottom: 5px; text-shadow: 2px 2px 8px rgba(0,0,0,0.4);'>
         🌾 Kisaan AI 🌾
         </h1>
     """, unsafe_allow_html=True)
     st.markdown("""
-        <p style='text-align: center; color: #4CAF50; font-size: 1.2em; font-weight: bold; margin-top: -5px;'>
-        🌱 Smart Crop Recommendation System 🌱
+        <p style='text-align: center; color: #FFD700; font-size: 1.3em; font-weight: bold; margin-top: 0; text-shadow: 1px 1px 4px rgba(0,0,0,0.3);'>
+        Part of Kisaan AI Platform
+        </p>
+        <p style='text-align: center; color: #ffffff; font-size: 1.1em; margin-top: -8px;'>
+        🌱 Crop Recommendation System 🌱
         </p>
     """, unsafe_allow_html=True)
 
@@ -153,7 +156,7 @@ st.markdown("---")
 # ─── Main Container ───────────────────────────────────────────────────────────
 with st.container():
 
-    st.markdown("## 🌱 Crop Recommendation Engine", unsafe_allow_html=True)
+    st.markdown("### 📋 Feature: Crop Recommendation Engine", unsafe_allow_html=True)
     st.markdown("✅ Enter your soil and climate details to find the best crop to grow.", unsafe_allow_html=True)
     st.markdown("")
     
@@ -208,14 +211,15 @@ with st.container():
             
             crop_upper = crop_name.upper()
             if crop_upper in crop_info:
-                st.markdown(f"<div style='background-color: #e8f5e9; border-left: 5px solid #4CAF50; padding: 15px; border-radius: 5px;'><h3 style='color: #2d5a3d; margin: 0;'>💡 Quick Info</h3><p style='color: #2d5a3d; margin: 10px 0 0 0;'>{crop_info[crop_upper]}</p></div>", unsafe_allow_html=True)
+                st.markdown(f"<div style='background-color: rgba(255, 215, 0, 0.15); border-left: 5px solid #FFD700; padding: 15px; border-radius: 8px;'><h3 style='color: #FFD700; margin: 0;'>💡 Quick Info</h3><p style='color: #ffffff; margin: 10px 0 0 0; font-weight: 500;'>{crop_info[crop_upper]}</p></div>", unsafe_allow_html=True)
 
 st.markdown("---")
 
 # ─── Footer ────────────────────────────────────────────────────────────────────
 st.markdown("""
-    <div style='text-align: center; padding: 20px; background: linear-gradient(135deg, #4CAF50, #45a049); border-radius: 10px; color: white; margin-top: 20px;'>
-        <h3 style='color: white; margin: 0;'>🌾 Kisaan AI - Smart Farming for Better Harvests 🌾</h3>
-        <p style='margin: 10px 0 0 0; font-size: 0.9em;'>Made with ❤️ for Indian Farmers | Empowering Agriculture with AI</p>
+    <div style='text-align: center; padding: 20px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 10px; color: white; margin-top: 30px;'>
+        <h3 style='color: #FFD700; margin: 0; font-size: 1.3em;'>🌾 Kisaan AI 🌾</h3>
+        <p style='color: #ffffff; margin: 8px 0 0 0; font-size: 0.95em;'>Crop Recommendation System - Part of Kisaan AI Platform</p>
+        <p style='margin: 10px 0 0 0; font-size: 0.85em; color: #FFD700;'>Made with ❤️ for Indian Farmers | Empowering Agriculture with AI</p>
     </div>
 """, unsafe_allow_html=True)
