@@ -18,17 +18,34 @@ st.markdown("""
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
     
+    /* Main text color - white for visibility */
+    body, p, div, span, label {
+        color: #ffffff !important;
+    }
+    
     /* Header styling */
     h1 {
-        color: #2d5a3d !important;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        color: #ffffff !important;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
         text-align: center !important;
+        font-weight: bold !important;
     }
     
     h2 {
-        color: #2d5a3d !important;
-        border-left: 5px solid #4CAF50;
+        color: #ffffff !important;
+        border-left: 5px solid #FFD700;
         padding-left: 15px !important;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    
+    h3 {
+        color: #ffffff !important;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    
+    /* Markdown text */
+    .stMarkdown {
+        color: #ffffff !important;
     }
     
     /* Container styling */
@@ -40,28 +57,35 @@ st.markdown("""
     
     /* Button styling */
     .stButton > button {
-        background: linear-gradient(90deg, #4CAF50, #45a049) !important;
-        color: white !important;
+        background: linear-gradient(90deg, #FFD700, #FFC700) !important;
+        color: #2d5a3d !important;
         font-weight: bold !important;
         border-radius: 8px !important;
         border: none !important;
-        box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important;
+        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3) !important;
         transition: all 0.3s ease !important;
         padding: 12px 20px !important;
     }
     
     .stButton > button:hover {
-        background: linear-gradient(90deg, #45a049, #3d8b40) !important;
-        box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4) !important;
+        background: linear-gradient(90deg, #FFC700, #FFB700) !important;
+        box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4) !important;
         transform: translateY(-2px) !important;
     }
     
     /* Input field styling */
     .stNumberInput input {
-        border: 2px solid #4CAF50 !important;
+        border: 2px solid #FFD700 !important;
         border-radius: 8px !important;
-        background-color: #f0f8f4 !important;
+        background-color: rgba(255, 255, 255, 0.9) !important;
+        color: #2d5a3d !important;
         padding: 10px !important;
+        font-weight: bold !important;
+    }
+    
+    .stNumberInput label {
+        color: #ffffff !important;
+        font-weight: bold !important;
     }
     
     /* Success message styling */
@@ -92,10 +116,10 @@ st.markdown("""
     
     /* Column styling */
     [data-testid="column"] {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
         padding: 15px;
-        border: 2px solid #4CAF50;
+        border: 2px solid #FFD700;
         margin: 5px;
     }
     </style>
