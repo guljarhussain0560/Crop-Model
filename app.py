@@ -138,15 +138,7 @@ crop_model, crop_encoder = load_crop_model()
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.markdown("""
-        <h1 style='text-align: center; color: #ffffff; font-size: 4em; margin-bottom: 5px; text-shadow: 2px 2px 8px rgba(0,0,0,0.4);'>
-        🌾 Kisaan AI 🌾
-        </h1>
-    """, unsafe_allow_html=True)
-    st.markdown("""
-        <p style='text-align: center; color: #FFD700; font-size: 1.3em; font-weight: bold; margin-top: 0; text-shadow: 1px 1px 4px rgba(0,0,0,0.3);'>
-        Part of Kisaan AI Platform
-        </p>
-        <p style='text-align: center; color: #ffffff; font-size: 1.1em; margin-top: -8px;'>
+        <p style='text-align: center; color: #ffffff; font-size: 2.1em; margin-top: -8px;'>
         🌱 Crop Recommendation System 🌱
         </p>
     """, unsafe_allow_html=True)
